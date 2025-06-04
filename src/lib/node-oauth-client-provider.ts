@@ -25,11 +25,8 @@ export class NodeOAuthClientProvider implements OAuthClientProvider {
   private softwareVersion: string
   private staticOAuthClientMetadata: StaticOAuthClientMetadata
   private staticOAuthClientInfo: StaticOAuthClientInformationFull
-<<<<<<< HEAD
   private _state: string
-=======
   private useOidcConfig: boolean
->>>>>>> 8357769 (feat: add OIDC configuration flag)
 
   /**
    * Creates a new NodeOAuthClientProvider
@@ -44,11 +41,8 @@ export class NodeOAuthClientProvider implements OAuthClientProvider {
     this.softwareVersion = options.softwareVersion || MCP_REMOTE_VERSION
     this.staticOAuthClientMetadata = options.staticOAuthClientMetadata
     this.staticOAuthClientInfo = options.staticOAuthClientInfo
-<<<<<<< HEAD
     this._state = randomUUID()
-=======
     this.useOidcConfig = !!options.useOidcConfig
->>>>>>> 8357769 (feat: add OIDC configuration flag)
   }
 
   get redirectUrl(): string {
