@@ -26,7 +26,18 @@
     "build": "tsup",
     "build:watch": "tsup --watch",
     "check": "prettier --check . && tsc",
-    "lint-fix": "prettier --check . --write"
+    "lint-fix": "prettier --check . --write",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": [
+        "ts"
+      ]
+    }
   },
   "dependencies": {
     "express": "^4.21.2",
@@ -36,6 +47,7 @@
     "@modelcontextprotocol/sdk": "^1.12.1",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.10",
+    "npm-watch": "^0.13.0",
     "prettier": "^3.5.3",
     "tsup": "^8.4.0",
     "tsx": "^4.19.3",

@@ -144,7 +144,7 @@ export function createLazyAuthCoordinator(serverUrlHash: string, callbackPort: n
         return authState
       }
 
-      log('Initializing auth coordination on-demand')
+      log('HERE: Initializing auth coordination on-demand')
       if (DEBUG) await debugLog(serverUrlHash, 'Initializing auth coordination on-demand', { serverUrlHash, callbackPort })
 
       // Initialize auth using the existing coordinateAuth logic

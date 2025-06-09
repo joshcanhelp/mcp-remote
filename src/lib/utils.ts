@@ -28,7 +28,7 @@ export const REASON_TRANSPORT_FALLBACK = 'falling-back-to-alternate-transport'
 export type TransportStrategy = 'sse-only' | 'http-only' | 'sse-first' | 'http-first'
 
 // Package version from package.json
-export const MCP_REMOTE_VERSION = require('../../package.json').version
+export const MCP_REMOTE_VERSION = "0.1.12"
 
 const pid = process.pid
 // Global debug flag
